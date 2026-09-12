@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Tracked pre-commit hook. Install once with:
+#   git config core.hooksPath scripts/hooks
+set -euo pipefail
+exec "$(dirname "$0")/../validate.sh"
